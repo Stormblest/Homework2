@@ -21,12 +21,6 @@
 
 
 
-
-
-
-
-
-
 <html>
 	<head>
 	<title> Buy Our Stuff </title>
@@ -36,7 +30,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	</head>
 	
-	<body id="mypage"	>
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-default">

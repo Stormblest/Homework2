@@ -55,7 +55,7 @@ for($j=0; $j<$rows; $j++)
       <div class="product-image-container" >
         <a href="select-product.php?product_id=$row[0]">
           <div class="product-image-inner">
-            <img src="$row[3]" class="product-image"/>
+            <img src="$row[3]" class="product-image"style="width:200px;height:300px;"/>
             <div class="product-image-description">
               <div class="product-image-title">$row[1]</div>
               <div class="product-image-price">$$row[2]</div>
