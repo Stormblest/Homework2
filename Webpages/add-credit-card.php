@@ -1,3 +1,6 @@
+<html>
+
+
 <form method="POST" action='payment-summary.php'>
     <div class="form-row">
         <div class="form-group col-md-3">

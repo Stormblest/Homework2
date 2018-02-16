@@ -18,13 +18,13 @@ if(isset($_POST['number'])) {
     $product_id = $_POST['product_id'];
 
     // insert payment 
-    $payment_query = "insert into `payment` (cc_number, exp_date, cvc) values ('$number', '$exp_date', '$cvc') ";
+    $payment_query = "insert into `payment` (CreditCard, Date, cvc) values ('$number', '$exp_date', '$cvc') ";
     $conn->query($payment_query);
     $payment_id = $conn->insert_id;
 	if($conn->error) die($conn->error);
 
     // update order table with payment id and total 
-    $order_query = "UPDATE `orders` SET `total` = $total, `payment_id` = $payment_id WHERE `orders`.`order_id` = $order_id";
+    $order_query = "UPDATE `order` SET `total` = $total, `payment_id` = $payment_id WHERE `order`.`order_id` = $order_id";
     $conn->query($order_query);
 	if($conn->error) die($conn->error);
 
@@ -40,24 +40,6 @@ $conn->close();
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -80,9 +62,7 @@ $conn->close();
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="view-products.php">View All Products</a></li>
-			<li><a href="add-credit-card.php">Add Creditcard</a></li>
-			<li><a href="payment-summary.php">Payment Summary</a></li>
+			<li><a href="view-products.php">View All Products</a></li
 		  </ul>
 		</div>
 	  </div>
