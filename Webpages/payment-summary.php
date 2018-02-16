@@ -51,8 +51,6 @@ $conn->close();
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	</head>
-	
-	<body id="mypage"	>
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-default">
@@ -73,3 +71,40 @@ $conn->close();
 	</div>
 	
 	
+	<div class= 'container' style="margin-top: 25px; text-align: center;">
+	<div class='row'>
+	<div class="product-title"> Order Summary</div>
+	</div>
+	<div class = "row">
+	
+	 Item: <?php echo $data[1]?>
+	 <br>
+	 Price: $<?php echo $data[2]?>
+	
+	
+	</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</html>
